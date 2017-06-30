@@ -33,7 +33,7 @@ console.log(isMarried, job, age2+age1);
 var secondName = prompt("What is the last Name?");
 console.log(secondName);
 
-*/
+
 
 //operators
 
@@ -44,3 +44,19 @@ var birthYear = now - age *2;
 
 console.log(birthYear);
 
+
+//if/elses
+
+var name = "John";
+var age = 26;
+var dt = new Date();
+var dob = dt.getFullYear() - age;
+var isMarried = false;
+
+if(isMarried === true && age >= 18){
+	console.log(name + ' is married');
+}else{
+	console.log(name + ' is not married');
+};  */
+
+//boolean logic and switch
