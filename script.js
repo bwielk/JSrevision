@@ -1,7 +1,7 @@
 //console.log("Hello")
 //console.log("Whazzz up")
 
-
+/*
 var name  = "John";
 //console.log(name);
 
@@ -32,3 +32,15 @@ console.log(isMarried, job, age2+age1);
 
 var secondName = prompt("What is the last Name?");
 console.log(secondName);
+
+*/
+
+//operators
+
+var age = 26;
+var dt = new Date();
+var now = dt.getFullYear();
+var birthYear = now - age *2;
+
+console.log(birthYear);
+
