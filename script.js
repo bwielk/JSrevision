@@ -125,7 +125,7 @@ console.log(myself.calculateAge());
 console.log(myself);
 
 //////////////////////loops
-*/
+
 
 
 var num = 0;
@@ -158,4 +158,23 @@ for(var i = 5; i <= 10; i++){
 		continue;
 	}
 	console.log(i);
+} */
+
+var yobs = [1992, 1993, 2004, 1995, 2001];
+
+var emptyarr = [];
+
+for(var i = 0; i< yobs.length; i++){
+	emptyarr.push(yobs[i]);
 }
+
+var dt = new Date();
+for(var i = 0; i<emptyarr.length; i++){
+	if(dt.getFullYear() - emptyarr[i] >= 18){
+		emptyarr[i] = "Mature";
+	}else{
+		emptyarr[i] = "Immature";
+	}
+}
+
+console.log(emptyarr);
