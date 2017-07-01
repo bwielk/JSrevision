@@ -171,9 +171,9 @@ for(var i = 0; i< yobs.length; i++){
 var dt = new Date();
 for(var i = 0; i<emptyarr.length; i++){
 	if(dt.getFullYear() - emptyarr[i] >= 18){
-		emptyarr[i] = "Mature";
+		emptyarr[i] = "Person number " + (i+1) + " was born in " + emptyarr[i] + ". Mature. " + (dt.getFullYear() - emptyarr[i]) + " years old";
 	}else{
-		emptyarr[i] = "Immature";
+		emptyarr[i] = "Person number " + (i+1) + " was born in " + emptyarr[i] + ". Immature. " + (dt.getFullYear() - emptyarr[i]) + " years old";
 	}
 }
 
