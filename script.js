@@ -104,7 +104,9 @@ if(mixUp.indexOf('Blaise') === -1){
 	mixUp.unshift("Blaise");
 }else{
 	console.log("correct");
-} */
+} 
+
+/////////////////////objects
 
 var myself = new Object();
 myself.name = "Blaise";
@@ -114,10 +116,46 @@ myself.eyes = "blue";
 myself.hair = "brown";
 myself.isMarried = false;
 myself.dogs = ["Shyshka", "Mamushka"];
-myself.calculateAge = function(yob){
+myself.calculateAge = function(){
 	var dt = new Date();
-	return dt.getFullYear() - yob;
+	this.age = dt.getFullYear() - this.yob;
 }
 
+console.log(myself.calculateAge());
+console.log(myself);
 
-console.log(myself.calculateAge(myself.yob));
+//////////////////////loops
+*/
+
+
+var num = 0;
+
+for(var i = 1; i <= 10; i++){
+	num++;
+	//console.log(i);
+}
+
+var names = ['Blaise', 'Kasia', 'Blue', 'Reed'];
+
+var people = 0;
+
+for(var name of names){
+	people++;
+	console.log(name + " is here");
+}
+
+console.log(" There are " + people + " people");
+
+for(var i = 0; i <= 5; i++){
+	console.log(i);
+	if(i === 4){
+		break;
+	}
+}
+
+for(var i = 5; i <= 10; i++){
+	if(i === 8){
+		continue;
+	}
+	console.log(i);
+}
